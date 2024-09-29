@@ -12,17 +12,10 @@ const WebcamComponent = () => {
   };
   return (
     <>
-      {/* <div> */}
-      {/* <Webcam
-        width="100%" // Adjust the width or height as needed
-        height="auto"
-        screenshotFormat="image/jpeg" // For taking screenshots later
-      /> */}
-      {/* </div> */}
-      <div>
+      <div className="webcamContainer">
         <Webcam style={videoStyles} audio={false} />
 
-        <div>
+        <div className="webcamButtonContainer">
           <button onClick={() => setFilter("")}>No Filter</button>
           <button onClick={() => setFilter("grayscale(100%)")}>
             Grayscale
